@@ -1,0 +1,55 @@
+/* nav.css */
+
+nav {
+    background-color: #000; /* 
+    color: #fff; /* Set text color to white */
+    padding: 5px; /* Add padding for better visibility */
+}
+
+.logo {
+    width: 200px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+#sidemenu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff; /* Set text color to white */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #b4b4b4; /* Set text color to a lighter shade on hover */
+}
+
+.active {
+    color: #b4b4b4; /* Set text color to a lighter shade for the active link */
+}
+
+/* Additional styling for user-related items */
+nav li {
+    display: inline-block;
+    margin-left: 15px;
+    color: #fff; /* Set text color to white */
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+/* Style for logout and login links */
+.nav-link.logout:hover,
+.nav-link.login:hover {
+    color: #b4b4b4;
+}

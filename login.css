@@ -1,0 +1,98 @@
+:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(223, 223, 223, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+form * {
+    font-family: var(--font-family, 'Poppins', sans-serif);
+    color: var(--text-color, #ffffff);
+    letter-spacing: var(--letter-spacing, 0.5px);
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: var(--h3-font-size, 32px);
+    font-weight: var(--h3-font-weight, 500);
+    line-height: var(--h3-line-height, 42px);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: var(--label-font-size, 16px);
+    font-weight: var(--label-font-weight, 500);
+    
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: var(--input-background-color, rgba(255, 255, 255, 0.07));
+    border-radius: var(--input-border-radius, 3px);
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: var(--input-font-size, 14px);
+    font-weight: var(--input-font-weight, 300);
+}
+
+::placeholder {
+    color: var(--placeholder-color, #e5e5e5);
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: var(--button-background-color, #560000);
+    color: var(--button-text-color, #ffffff);
+    padding: 15px 0;
+    font-size: var(--button-font-size, 18px);
+    font-weight: var(--button-font-weight, 600);
+    border-radius: var(--button-border-radius, 5px);
+    cursor: pointer;
+}
+
+
+

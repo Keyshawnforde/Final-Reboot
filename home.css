@@ -1,0 +1,41 @@
+
+.home .container{
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 200px;
+}
+
+.home h1{
+	color:#ffffff;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin:0px;
+    margin-top: 50px;
+}
+
+.home h1 span{
+	color:#560000;;
+}
+
+.cta-buttons-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.cta-button {
+    display: inline-block;
+    margin: 50px; /* Adjust the margin as needed */
+    padding: 10px 20px;
+    background-color: #560000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #5600007a;
+}

@@ -1,0 +1,67 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<link rel='stylesheet' href='/content/split.css' />
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="custom-offset-md-3 custom-col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="custom-form" method="POST">
+                <div class="custom-form-group">
+                    <label for="nameTextField">Workout Name</label>
+                    <input type="text" class="custom-form-control"
+                    id="nameTextField"
+                    placeholder="Enter Workout"
+                    name="Workout" 
+                    
+                    required>
+                </div>
+
+                <div class="custom-form-group">
+                    <label for="repsTextField">Number Of Reps</label>
+                    <input type="text" class="custom-form-control"
+                    id="repsTextField"
+                    placeholder="Enter the Number of Reps"
+                    name="Reps" 
+                    
+                    required>
+                </div>
+
+                <div class="custom-form-group">
+                    <label for="setsTextField">Number of Sets</label>
+                    <input type="text" class="custom-form-control"
+                    id="setsTextField"
+                    placeholder="Enter the Number of Sets"
+                    name="Sets" 
+                    
+                    required>
+                </div>
+
+
+                <div class="custom-form-group">
+                    <label for="weightTextField">Weight</label>
+                    <input type="text" class="custom-form-control"
+                    id="weightTextField"
+                    placeholder="Enter the Weight"
+                    name="Weight" 
+                    
+                    required>
+                </div>
+
+                <button class="custom-btn custom-btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                <a href="/workouts" class="custom-btn custom-btn-warning">
+                    <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>

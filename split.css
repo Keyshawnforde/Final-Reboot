@@ -1,0 +1,117 @@
+body {
+  color: #fff;
+}
+
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .custom-table-row {
+    display: table-row;
+    background-color: rgb(0, 0, 0); /* Light background color */
+    border-bottom: 1px solid #000000;
+  }
+  
+  .custom-table-header,
+  .custom-table-data {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .custom-table-header {
+    font-weight: bold;
+    background-color: #000000; /* Dark background color */
+    color: #fff;
+  }
+  
+  .custom-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(0, 0, 0); /* Primary button color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-button{
+    background-color: #560000; 
+  }
+  
+  .edit-button {
+    background-color: #560000; /* Success button color for Edit button */
+  }
+  
+  .delete-button {
+    background-color: #560000; /* Danger button color for Delete button */
+  }
+  
+  /* Additional styling for the title and add workout button */
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust the spacing between title and button */
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #560000;
+    color: rgb(255, 255, 255)e0e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    background-color: #5600007a;
+  }
+  
+  
+  .custom-btn-warning {
+    background-color: #560000;
+    color: #ffffff;
+  }

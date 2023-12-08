@@ -1,0 +1,48 @@
+<% include ../partials/header.ejs %>
+<% include ../partials/main_nav.ejs %>
+
+
+<link rel='stylesheet' href='/content/split.css' />
+<main>
+
+<div class="header-text">
+ <div class="row">
+        <div class="offset-md-1 col-md-10">
+            <h1><%= title %></h1>
+            <% if (typeof displayName === 'string' && displayName) { %>
+            <a href="/workouts/add" class="add-button custom-button" role="button">Add a Workout</a>
+         <br>
+<% } %>
+<br>
+            <br>
+            <br>
+            <table class="custom-table">
+                <tr class="custom-table-row">
+                    <th class="custom-table-header">Workout</th>
+                    <th class="custom-table-header">Reps</th>
+                    <th class="custom-table-header">Sets</th>
+                    <th class="custom-table-header">Weight</th>
+                    <th class="custom-table-header"></th>
+                    <th class="custom-table-header"></th>
+                </tr>
+                <% for (let count = 0; count < workoutSplit.length; count++) { %>    
+                    <tr class="custom-table-row">
+                        <td class="custom-table-data"><%= workoutSplit[count].Workout %></td>
+                        <td class="custom-table-data"><%= workoutSplit[count].Reps %></td>
+                        <td class="custom-table-data"><%= workoutSplit[count].Sets %></td>
+                        <td class="custom-table-data"><%= workoutSplit[count].Weight%></td>
+                        <td class="custom-table-data">
+                         <a href="/workouts/edit/<%= workoutSplit[count]._id %>" class="edit-button custom-button">Edit</a> </td>
+                        <td class="custom-table-data">
+                        <a href="/workouts/delete/<%= workoutSplit[count]._id %>"class="delete-button custom-button">Delete</a> </td>
+
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+  </div>
+</div>
+</main>
+
+<% include ../partials/bottom_nav.ejs %>
+<% include ../partials/footer.ejs %>

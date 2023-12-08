@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Bebas Neue',  sans-serif;
+  text-transform: uppercase;
+  background-color: #000000;
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styles for the container class, adding left padding */
+.container {
+  padding-left: 10px;
+}
+
+/* Styles for the navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+/* Styles for the logo image */
+.logo {
+  width: 120px;
+  text-align: left;
+  margin-right: 10px; /* Add margin for separation */
+}
+
+/* Styles for the logo container */
+.logo-container {
+  margin-right: 0px;
+}
+
+/* Styles for the navigation links */
+#header nav ul {
+  list-style: none;
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255); /* Set text color to black */
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+}
+
+/* Styles for the underline effect on navigation links */
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #151514;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+
+
